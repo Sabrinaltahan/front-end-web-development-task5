@@ -1,0 +1,55 @@
+
+@keyframes shadowAnimation {
+    0% {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+    }
+    100% {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    }
+}
+
+.animated-text {
+    animation: shadowAnimation 3s infinite;
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #3498db; 
+    }
+    50% {
+        background-color: #2ecc71; 
+    }
+    100% {
+        background-color: #3498db;
+    }
+}
+
+.background-animation {
+    animation: backgroundAnimation 5s infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes labelAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.membership-form label {
+    animation: labelAnimation 3s infinite alternate; 
+}

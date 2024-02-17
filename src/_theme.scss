@@ -1,0 +1,20 @@
+// Theme Partial
+$dark-background: #34495e;
+$dark-text: #ecf0f1;
+$light-background: #ecf0f1;
+$light-text: #2c3e50;
+
+:root {
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+}
+
+.dark {
+    --background-color: #34495e;
+    --text-color: #ecf0f1;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
