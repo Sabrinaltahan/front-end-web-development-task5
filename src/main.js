@@ -130,6 +130,8 @@ function createPieChart(data) {
 
 
 //map
+document.getElementById('search-button').addEventListener('click', searchLocation);
+
 async function searchLocation() {
     const location = document.getElementById('location').value;
     if (!location) {
