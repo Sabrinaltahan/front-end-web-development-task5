@@ -1,45 +1,51 @@
 .button {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
-  background-color: #3498db;
   color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
+
 .button:hover {
   background-color: #217dbb;
 }
 
 .container {
   width: 80%;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #3498db;
   color: #fff;
+  background-color: #3498db;
   padding: 20px 0;
 }
+
 header h1 {
-  font-size: 24px;
   margin: 0;
+  font-size: 24px;
 }
+
 header nav ul {
-  list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
+  list-style-type: none;
 }
+
 header nav ul li {
-  display: inline-block;
   margin-left: 20px;
+  display: inline-block;
 }
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color .3s;
 }
+
 header nav ul li a:hover {
   color: #ddd;
 }
@@ -47,39 +53,46 @@ header nav ul li a:hover {
 main {
   padding: 40px 0;
 }
+
 main h2 {
-  font-size: 32px;
   margin-bottom: 20px;
+  font-size: 32px;
 }
+
 main p {
   line-height: 1.5;
 }
+
 main .banner {
-  background-image: url("img/banner.jpg");
-  background-size: cover;
   color: #fff;
-  padding: 100px 0;
   text-align: center;
+  background-image: url("banner.1009e17c.jpg");
+  background-size: cover;
+  padding: 100px 0;
 }
+
 main .services .service {
-  display: inline-block;
+  vertical-align: top;
   width: 30%;
   margin: 0 1%;
-  vertical-align: top;
+  display: inline-block;
 }
+
 main .services .service img {
   width: 100%;
   height: auto;
 }
+
 main .services .service h3 {
-  font-size: 20px;
   margin: 10px 0;
+  font-size: 20px;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (width <= 767px) {
   main .services .service {
-    display: block;
     width: 100%;
     margin-bottom: 20px;
+    display: block;
   }
 }
 
@@ -87,53 +100,61 @@ main .services .service h3 {
   background-color: #f9f9f9;
   padding: 50px 0;
 }
+
 .testimonial-slider .container {
   text-align: center;
 }
+
 .testimonial-slider .container h2 {
   margin-bottom: 30px;
 }
+
 .testimonial-slider .container .slider {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   overflow-x: hidden;
 }
+
 .testimonial-slider .container .slider .slide {
-  flex: 0 0 auto;
-  padding: 20px;
   text-align: center;
+  flex: none;
+  padding: 20px;
   display: none;
 }
+
 .testimonial-slider .container .slider .slide img {
+  border-radius: 50%;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .testimonial-slider .container .slider .slide p {
-  font-style: italic;
   margin-bottom: 10px;
+  font-style: italic;
 }
+
 .testimonial-slider .container .slider .slide span {
   font-weight: bold;
 }
+
 .testimonial-slider .container .slider .slide:first-child {
   display: block;
 }
 
 .company-logo {
-  display: block;
   max-width: 100%;
   height: auto;
   margin: 20px auto;
+  display: block;
 }
 
 footer {
-  background-color: #333;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
+  background-color: #333;
+  padding: 20px 0;
 }
 
 .shadow-effect, .background-animation {
@@ -141,108 +162,113 @@ footer {
 }
 
 .image-animation .animated-image {
-  width: 100px;
   border-radius: 60%;
-  transition: transform 0.5s ease;
+  width: 100px;
+  transition: transform .5s;
 }
+
 .image-animation .animated-image:hover {
-  transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg)scale(1.2);
 }
 
 .background-animation .container {
-  padding-bottom: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .membership-form {
+  background-color: #fffc;
+  border-radius: 10px;
   max-width: 400px;
   margin: 0 auto;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #0000001a;
 }
+
 .membership-form h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .membership-form label {
-  display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  display: block;
 }
+
 .membership-form input {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
-.membership-form button {
-  width: 100%;
+  width: 80%;
+  margin-bottom: 20px;
   padding: 10px;
-  background-color: #3498db;
+}
+
+.membership-form button {
   color: #fff;
+  cursor: pointer;
+  background-color: #3498db;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  transition: width 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  transition: width .3s;
 }
+
 .membership-form button:hover {
   background-color: #000;
   width: 150px;
 }
 
 .parallax-section {
-  height: 400px;
-  background-image: url("img/banner.jpg");
-  background-size: cover;
+  background-image: url("banner.1009e17c.jpg");
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
+  height: 400px;
   position: relative;
+  overflow: hidden;
 }
+
 .parallax-section .parallax-content {
+  text-align: center;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
 }
+
 .parallax-section .parallax-content h2 {
-  font-size: 36px;
   margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .loader {
+  z-index: 9999;
   border: 8px solid #f3f3f3;
+  border-top-color: #3498db;
   border-radius: 50%;
-  border-top: 8px solid #3498db;
   width: 50px;
   height: 50px;
-  animation: spin 1s linear infinite;
+  animation: 1s linear infinite spin;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999;
 }
 
 .chart-container {
-  display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  display: flex;
 }
 
-#bar-chart-section,
-#pie-chart-section {
+#bar-chart-section, #pie-chart-section {
   width: calc(50% - 10px);
 }
 
-#bar-chart-container,
-#pie-chart-container {
+#bar-chart-container, #pie-chart-container {
   border: 1px solid #ccc;
   padding: 10px;
 }
@@ -252,24 +278,24 @@ footer {
 }
 
 .map-div label {
-  font-weight: bold;
   margin-right: 10px;
+  font-weight: bold;
 }
 
-.map-div input[type=text] {
-  padding: 10px;
-  border-radius: 5px;
+.map-div input[type="text"] {
   border: 1px solid #ccc;
+  border-radius: 5px;
   margin-right: 10px;
+  padding: 10px;
 }
 
 .map-div button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
   color: #fff;
   cursor: pointer;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 .map-div button:hover {
@@ -277,18 +303,18 @@ footer {
 }
 
 .map-div #map-container {
+  border-radius: 5px;
   width: 100%;
   height: 400px;
   margin-top: 20px;
-  border-radius: 5px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .map-div #map-container iframe {
+  border: none;
   width: 100%;
   height: 100%;
-  border: none;
 }
 
 :root {
@@ -308,55 +334,66 @@ body {
 
 @keyframes shadowAnimation {
   0% {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px #00000080;
   }
+
   50% {
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 4px 4px 8px #000c;
   }
+
   100% {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px #00000080;
   }
 }
+
 .animated-text {
-  animation: shadowAnimation 3s infinite;
+  animation: 3s infinite shadowAnimation;
 }
 
 @keyframes backgroundAnimation {
   0% {
     background-color: #3498db;
   }
+
   50% {
     background-color: #2ecc71;
   }
+
   100% {
     background-color: #3498db;
   }
 }
+
 .background-animation {
-  animation: backgroundAnimation 5s infinite;
+  animation: 5s infinite backgroundAnimation;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes labelAnimation {
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(10px);
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
 .membership-form label {
-  animation: labelAnimation 3s infinite alternate;
+  animation: 3s infinite alternate labelAnimation;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.4d663569.css.map */

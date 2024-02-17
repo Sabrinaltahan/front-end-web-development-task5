@@ -24,30 +24,21 @@
         </div>
     </header>
     <main>
-        
-        <section class="background-animation">
-            <div class="container">
-                <div class="image-animation">
-                    <img src="img/service1.png" alt="ShipShip Logo" class="animated-image">
+        <div class="chart-container">
+            <section id="bar-chart-section">
+                <h2>Bar Chart</h2>
+                <div id="bar-chart-container">
+                    <canvas id="barChart" width="400" height="400"></canvas>
                 </div>
-                <h2 class="animated-text">Join Our Membership</h2>
-                <form class="membership-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <button type="submit" class="button">Join Now</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="parallax-section">
-            <div class="parallax-content">
-                <h2>We glad you visit our Website!</h2>
-            </div>
-        </section>
+            </section>
+        
+            <section id="pie-chart-section">
+                <h2>Pie Chart</h2>
+                <div id="pie-chart-container">
+                    <canvas id="pieChart" width="400" height="400"></canvas>
+                </div>
+            </section>
+        </div>
         
     </main>
     <footer>
@@ -56,6 +47,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>

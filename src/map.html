@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ShipShip</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sass.html">SASS</a></li>
+                    <li><a href="animation.html">Animation</a></li>
+                    <li><a href="diagram.html">Diagram</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><button id="mode-toggle" class="button">Toggle Dark Mode</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="map-div">
+            <h1>Map Page</h1>
+            <label for="location">Enter Location:</label>
+            <input type="text" id="location" name="location">
+            <button onclick="searchLocation()">Search</button>
+            <div id="map-container"></div>
+        </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ShipShip Website. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

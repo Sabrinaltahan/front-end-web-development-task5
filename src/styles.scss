@@ -290,6 +290,69 @@ footer {
 }
 
 
+// bar and pie charts
+.chart-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+#bar-chart-section,
+#pie-chart-section {
+    width: calc(50% - 10px); 
+}
+
+#bar-chart-container,
+#pie-chart-container {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+
+// map
+.map-div h1 {
+    margin-bottom: 20px;
+}
+
+.map-div label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.map-div input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.map-div button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.map-div button:hover {
+    background-color: #555;
+}
+
+.map-div #map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-div #map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 // Include theme partial
 @import 'theme';
